@@ -38,22 +38,22 @@ This project allows you to create a Google Calendar around the UC Davis courses 
 3. Search "Google Calendar" in center search bar and select the result
 4. Enable "Google Calendar" api and click "manage"
 5. Go to "OAuth consent screen" tab and edit:
-        * Set user type to external
-        * Select /auth/cloud-services scope
-        * Enter email of who would be owning the google calendar you want to manipulate into test users
+    * Set user type to external
+    * Select /auth/cloud-services scope
+    * Enter email of who would be owning the google calendar you want to manipulate into test users
 7. Go to "Credentials" tab and create credentials
 8. **Return to "Credentials" tab, copy the "client id", and paste it in the indicated section of the manifest.json file!**
 9. Click navigation menu, hover "IAM & Admin", and click "Service Accounts"
 10. Create new service account:
-        * Select "Owner" (found under "basic") as role
-11. Click 3 dots next to the new service account info and click "manage keys"
-12. Create new key and set it to JSON
-13. Move the new JSON file to project folder ("schedbuild4")
-14. **Rename file to ".env"**
-15. **Copy down the client-email between the quotations for the section below!**
-16. Create a variable called "CREDENTIALS" and set it equal to the entire object in the file
-17. Remove spaces between elements in the Credentials object to make it all one line
-18. Create a variable under the CREDENTIALS variable called "CALENDAR_ID" and set it equal to the value highlighted at the end of the section below!
+    * Select "Owner" (found under "basic") as role
+12. Click 3 dots next to the new service account info and click "manage keys"
+13. Create new key and set it to JSON
+14. Move the new JSON file to project folder ("schedbuild4")
+15. **Rename file to ".env"**
+16. **Copy down the client-email between the quotations for the section below!**
+17. Create a variable called "CREDENTIALS" and set it equal to the entire object in the file
+18. Remove spaces between elements in the Credentials object to make it all one line
+19. Create a variable under the CREDENTIALS variable called "CALENDAR_ID" and set it equal to the value highlighted at the end of the section below!
 
 # Steps to set up calendar to be manipulated (step 3) ~
 1. Log into the Google email you with to create your class schedule in
