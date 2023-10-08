@@ -12,16 +12,16 @@ This project allows you to create a Google Calendar around the UC Davis courses 
     * npm install body-parser
     * npm install browserify-shim
     * npm install cors
-     npm install dotenv
-     npm install express
-     npm install googleapis
-     npm install puppeteer
-     npm install react
-     npm install react-dom
-     npm install react-icons
-     npm install reactjs-popup
-     npm install save
-     npm install vite
+    * npm install dotenv
+    * npm install express
+    * npm install googleapis
+    * npm install puppeteer
+    * npm install react
+    * npm install react-dom
+    * npm install react-icons
+    * npm install reactjs-popup
+    * npm install save
+    * npm install vite
 7. Open 2 terminals
 8. Paste "npm run start" in one of the terminals
 9. Paste "npm run dev" in the other terminal
@@ -38,14 +38,14 @@ This project allows you to create a Google Calendar around the UC Davis courses 
 3. Search "Google Calendar" in center search bar and select the result
 4. Enable "Google Calendar" api and click "manage"
 5. Go to "OAuth consent screen" tab and edit:
-        Set user type to external
-        Select /auth/cloud-services scope
-        Enter email of who would be owning the google calendar you want to manipulate into test users
+        * Set user type to external
+        * Select /auth/cloud-services scope
+        * Enter email of who would be owning the google calendar you want to manipulate into test users
 7. Go to "Credentials" tab and create credentials
 8. **Return to "Credentials" tab, copy the "client id", and paste it in the indicated section of the manifest.json file!**
 9. Click navigation menu, hover "IAM & Admin", and click "Service Accounts"
 10. Create new service account:
-        Select "Owner" (found under "basic") as role
+        * Select "Owner" (found under "basic") as role
 11. Click 3 dots next to the new service account info and click "manage keys"
 12. Create new key and set it to JSON
 13. Move the new JSON file to project folder ("schedbuild4")
