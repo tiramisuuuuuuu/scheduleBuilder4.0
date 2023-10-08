@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"version": "1.0.0",
+
+	"name": "Courses To Cal",
+	"description": "Creates a google calendar based on course schedule",
+	"oauth2": {
+		"client_id": "756283913762-2ug73dc3nmve3l6c0rttsbourhocc3io.apps.googleusercontent.com",
+		"scopes": ["https://www.googleapis.com/auth/cloud-platform"]
+	},
+	"permissions": ["identity", "identity.email"],
+	"content_security_policy": "script-src 'self' 'unsafe-eval' https://apis.google.com; object-src 'self'",
+	"browser_action": {
+		"default_popup": "index.html"
+	}
+}
