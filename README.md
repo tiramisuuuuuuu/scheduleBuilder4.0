@@ -19,13 +19,14 @@ This project allows you to create a Google Calendar around the UC Davis courses 
      npm install react
      npm install react-dom
      npm install react-icons
+     npm install reactjs-popup
      npm install save
      npm install vite
-6. Open 2 terminals
-7. Paste "npm run start" in one of the terminals
-8. Paste "npm run dev" in the other terminal
-9. Copy the localhost link in the "npm run dev" terminal
-10. Paste the link into your chrome browser and enjoy!!
+7. Open 2 terminals
+8. Paste "npm run start" in one of the terminals
+9. Paste "npm run dev" in the other terminal
+10. Copy the localhost link in the "npm run dev" terminal
+11. Paste the link into your chrome browser and enjoy!!
 
 
 -------------**ALL STEPS TO SETUP GOOGLE API BELOW ARE TAKEN FROM https://www.youtube.com/watch?v=dFaV95gS_0M**
