@@ -41,14 +41,16 @@ This project allows you to create a Google Calendar around the UC Davis courses 
         Set user type to external
         Select /auth/cloud-services scope
         Enter email of who would be owning the google calendar you want to manipulate into test users
-7. Click navigation menu, hover "IAM & Admin", and click "Service Accounts"
-8. Create new service account:
+7. Go to "Credentials" tab and create credentials
+8. **Return to "Credentials" tab, copy the "client id", and paste it in the indicated section of the manifest.json file!**
+9. Click navigation menu, hover "IAM & Admin", and click "Service Accounts"
+10. Create new service account:
         Select "Owner" (found under "basic") as role
 11. Click 3 dots next to the new service account info and click "manage keys"
 12. Create new key and set it to JSON
 13. Move the new JSON file to project folder ("schedbuild4")
-14. Rename file to ".env"
-15. Copy down the client-email between the quotations for the section below!
+14. **Rename file to ".env"**
+15. **Copy down the client-email between the quotations for the section below!**
 16. Create a variable called "CREDENTIALS" and set it equal to the entire object in the file
 17. Remove spaces between elements in the Credentials object to make it all one line
 18. Create a variable under the CREDENTIALS variable called "CALENDAR_ID" and set it equal to the value highlighted at the end of the section below!
@@ -59,5 +61,5 @@ This project allows you to create a Google Calendar around the UC Davis courses 
 3. Create a new calendar under the "other calendars" tab
 4. Go to the new calendar's tab
 5. Scroll down to "Share with specific people or groups" and add the email copied in step 15 of the section above
-6. Scroll down to "Integrate calendar" and copy calendar id
+6. **Scroll down to "Integrate calendar" and copy calendar id**
 7. Simply paste calendar id where indicated in step 18 of the section above!
