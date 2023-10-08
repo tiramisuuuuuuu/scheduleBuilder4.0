@@ -9,9 +9,9 @@ This project allows you to create a Google Calendar around the UC Davis courses 
 3. Create new Google calendar that you wish to create your class schedule in and get credentials (detailed below!)
 4. "cd" into your new folder ("schedbuild4")
 5. Install all dependecies and vite by pasting the following commands into the terminal:
-     npm install body-parser
-     npm install browserify-shim
-     npm install cors
+    * npm install body-parser
+    * npm install browserify-shim
+    * npm install cors
      npm install dotenv
      npm install express
      npm install googleapis
