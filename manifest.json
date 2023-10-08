@@ -5,7 +5,7 @@
 	"name": "Courses To Cal",
 	"description": "Creates a google calendar based on course schedule",
 	"oauth2": {
-		"client_id": "756283913762-2ug73dc3nmve3l6c0rttsbourhocc3io.apps.googleusercontent.com",
+		"client_id": "{insert your val}.apps.googleusercontent.com",
 		"scopes": ["https://www.googleapis.com/auth/cloud-platform"]
 	},
 	"permissions": ["identity", "identity.email"],
