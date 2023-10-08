@@ -42,11 +42,11 @@ function makeResultsTable(data) {
     );
   const element = <ul>
   {list.map(item => (
-    <li key={item.id}>
-      <div>{item.label}</div>
-      <div>{item.value}</div>
+    <li key={item.id} class="search-items">
+      <div className="result-label">{item.label}</div>
+      <div className="result-value">{item.value}</div>
       <div>
-        <Popup trigger= {<button  data-bttnid={item.id} data-bttnlabel={item.label} data-bttnval={item.value} onClick={onClickHandler}>+</button>}>
+        <Popup trigger= {<button className="result-bttn" data-bttnid={item.id} data-bttnlabel={item.label} data-bttnval={item.value} onClick={onClickHandler}>+</button>}>
           <div>Added to google calendar!!</div>
         </Popup>
       </div>
