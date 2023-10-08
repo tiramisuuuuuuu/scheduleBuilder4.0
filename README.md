@@ -1,6 +1,8 @@
 # Function
 This project allows you to create a Google Calendar around the UC Davis courses you choose in the interface.
 
+
+
 # HOW TO USE
 1. Create a react app in terminal using the command "npx create-react-app schedbuild4" and replace all files except for "node-modules" & "public" in the created folder with the files in this repository.
 2. Create Google Api account and get credentials (detailed below!)
@@ -25,7 +27,9 @@ This project allows you to create a Google Calendar around the UC Davis courses 
 9. Copy the localhost link in the "npm run dev" terminal
 10. Paste the link into your chrome browser and enjoy!!
 
+
 -------------**ALL STEPS TO SETUP GOOGLE API BELOW ARE TAKEN FROM https://www.youtube.com/watch?v=dFaV95gS_0M**
+
 -------------**A new file is created in the sections below; temp.txt in this repository simulates what the end product should look like!**
 # Steps to create google api access (step 2) ~
 1. Go to https://console.cloud.google.com/apis/library and login
