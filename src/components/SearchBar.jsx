@@ -2,27 +2,37 @@ import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import "./SearchBar.css";
 import { FaSearch } from "react-icons/fa";
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
 
 
 
-const onClickHandler = e => {
-  console.log(e.currentTarget.getAttribute('data-bttnid'));
-  console.log(e.currentTarget.getAttribute('data-bttnlabel'));
-  console.log(e.currentTarget.getAttribute('data-bttnval'));
-  (async () => {
+export const Button = ({label, value}) => {
+
+  const [text, setText] = useState("+")
+
+  const onClickHandler = e => {
     console.log("begin");
-    
-    const response = await fetch("http://localhost:3001/add-to-calendar", {
-      method: "POST",
-      headers: {
-        'Content-type': "application/json"
-      },
-      body: JSON.stringify({ label: e.currentTarget.getAttribute('data-bttnlabel'), value: e.currentTarget.getAttribute('data-bttnval') })
-      });
-    })();
+    console.log(e.currentTarget.getAttribute('data-bttnid'));
+    let id = e.currentTarget.getAttribute('data-bttnid')
+    console.log(e.currentTarget.getAttribute('data-bttnlabel'));
+    console.log(e.currentTarget.getAttribute('data-bttnval'));
   
+    (async () => {
+      console.log("begin");
+      const response = await fetch("http://localhost:3001/add-to-calendar", {
+        method: "POST",
+        headers: {
+          'Content-type': "application/json"
+        },
+        body: JSON.stringify({ label: e.currentTarget.getAttribute('data-bttnlabel'), value: e.currentTarget.getAttribute('data-bttnval') })
+        });
+      })();
+    
+    setText('Added');
+  }
+
+  return (
+    <button className="result-bttn" data-bttnlabel={label} data-bttnval={value} onClick={onClickHandler}>{text}</button>
+  );
 }
 
 
@@ -42,15 +52,10 @@ function makeResultsTable(data) {
     );
   const element = <ul>
   {list.map(item => (
-    <li key={item.id} class="search-items">
+    <li key={item.id} className="search-items">
       <div className="result-label">{item.label}</div>
       <div className="result-value">{item.value}</div>
-      <div>
-        <Popup trigger= {<button className="result-bttn" data-bttnid={item.id} data-bttnlabel={item.label} data-bttnval={item.value} onClick={onClickHandler}>+</button>}>
-          <div>Added to google calendar!!</div>
-        </Popup>
-      </div>
-      
+      <Button label={item.label} value={item.value}/>
     </li>
     ))}
   </ul>;
@@ -79,7 +84,7 @@ const onKeyPressHandler = e => {
 }
 
 
-export const SearchBar = ({setResults}) => {
+export const SearchBar = () => {
     const [input, setInput] = useState("")
   return (
     <div className="input-wrapper">
