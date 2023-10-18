@@ -9,7 +9,7 @@ function App() {
   return (
 	<div>
 		<div className="header">
-			<img className="logo" src="../cow-builder-logo2.png" alt="cow builder logo"></img>
+			<img className="logo" src="../cow-builder-logo2.1.png" alt="cow builder logo"></img>
 			<h1 className="title">Welcome to ScheduleBuilder4.0</h1>
 			<p className="summary">Enter the course code of a UC Davis course you wish to auto add to your Google Calendar below!! (please allow up to 1 min for the results to load :) )</p>
 		</div>
